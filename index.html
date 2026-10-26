@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quatro Fan — mobile games</title>
+  <meta name="description" content="Quatro Fan makes small, fun mobile games. Pop or Stop: hold to inflate, release to bank points — don't let it pop!">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #EDE7FF;
+      background: #190C2E; /* same as the logo background, so the logo blends in */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px;
+    }
+    .logo { width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto 8px; }
+    h1 { position: absolute; left: -9999px; } /* text for search engines; the logo shows the name */
+    .tagline { color: #B7A8DA; margin: 0 0 36px; }
+    .game { display: flex; gap: 18px; align-items: center; margin-bottom: 14px; }
+    .game img { width: 96px; height: 96px; border-radius: 22%; flex-shrink: 0; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+    .game h2 { margin: 0; }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 24px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1.5rem; }
+    .card p { margin: 0 0 16px; line-height: 1.55; color: #D6CCF2; }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #5BF5D6;
+      color: #0A1D46;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .links { margin-top: 16px; font-size: 0.95rem; }
+    .links a { color: #A57BF5; }
+    footer { margin-top: auto; padding-top: 40px; color: #8E80B5; font-size: 0.9rem; text-align: center; }
+    footer a { color: #B7A8DA; }
+  </style>
+</head>
+<body>
+
+  <img class="logo" src="logo.png" alt="Quatro Fan">
+  <h1>Quatro Fan</h1>
+  <p class="tagline">Small, fun mobile games</p>
+
+  <div class="card">
+    <div class="game">
+      <img src="poporstop-icon.png" alt="Pop or Stop icon">
+      <h2>Pop or Stop</h2>
+    </div>
+    <p>How far will you go before it pops? Hold to inflate the balloon, release to bank the points — but every balloon has
+      its own secret limit. 60-second rounds, one finger, endless "just one more".</p>
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.quatrofan.poporstop">Get it on Google Play</a>
+    <div class="links">
+      <a href="https://quatro16.github.io/pop-or-stop-legal/privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>
+    Quatro Fan · <a href="mailto:quatro.fan.game@gmail.com">quatro.fan.game@gmail.com</a>
+  </footer>
+
+</body>
+</html>
